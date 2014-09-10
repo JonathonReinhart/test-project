@@ -3,6 +3,6 @@
 
 int feature1(void)
 {
-    printf("This is feature1\n");
+    printf("This is feature1 -- Shiny!\n");
     return 0;
 }
