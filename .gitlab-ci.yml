@@ -1,0 +1,8 @@
+image: gcc:5.1
+
+before_script:
+  env
+  
+build:
+  script:
+    - make
