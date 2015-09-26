@@ -1,7 +1,7 @@
 image: gcc:5.1
 
 before_script:
-  env
+  - env
   
 build:
   script:
