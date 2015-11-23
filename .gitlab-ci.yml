@@ -1,9 +1,12 @@
 image: gcc:5.1
 
+artifacts:
+  untracked: true
+
 before_script:
   - env
   
 build:
   script:
     - make
-    - curl -X POST -F "files=@testapp" "http://muzeeum.onthefive.com/api/v1/artifacts?project_id=$CI_PROJECT_ID&build_id=$CI_BUILD_ID"
+    #- curl -X POST -F "files=@testapp" "http://muzeeum.onthefive.com/api/v1/artifacts?project_id=$CI_PROJECT_ID&build_id=$CI_BUILD_ID"
